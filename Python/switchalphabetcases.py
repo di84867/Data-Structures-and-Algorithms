@@ -6,7 +6,7 @@ def switch_alphabet_cases_ascii(s):
             # Convert lowercase to uppercase by subtracting 32
             result.append(chr(ascii_val - 32))
         elif 'A' <= ch <= 'Z':
-            # Convert uppercase to lowercase by adding 32
+            # Convert uppercase to lowercase by adding 32 
             result.append(chr(ascii_val + 32))
         else:
             result.append(ch)

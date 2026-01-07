@@ -38,5 +38,3 @@ class mooresvotingalgo{
         sc.close();
     }
 }
-
-//sample
