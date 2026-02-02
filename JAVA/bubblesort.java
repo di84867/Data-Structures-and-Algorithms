@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class bubblesort {
     public static void main(String[] xyz) {
-        int temp, i, j;
+        int temp;
     
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Enter the number of elements in the array to perform bubble sort");
