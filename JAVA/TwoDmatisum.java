@@ -1,5 +1,4 @@
-//Prining row wise sum of 2D mat
-    import java.util.Scanner;
+import java.util.Scanner;
 public class TwoDmatisum {  
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
