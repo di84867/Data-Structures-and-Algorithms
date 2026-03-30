@@ -6,8 +6,9 @@ class matrix{
         System.out.println("The Entered Matrix is:");
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
-                System.out.println(a[i][j]+" ");
+                System.out.print(a[i][j]+" ");
             }
+            System.out.println();
         }
     }
     public void rowwisesum(int a[][]){
@@ -65,8 +66,35 @@ class matrix{
     }
     public void rotate(int a[][],int n,String dir){
         int rows=a.length;
-        int cols=a[0].length;
-        
+        if (rows == 0 || a[0].length != rows) {
+            return;
+        }
+        int rotations = (n / 90) % 4;
+        if (dir.equalsIgnoreCase("anticlockwise") || dir.equalsIgnoreCase("anti-clockwise")) {
+            rotations = (4 - rotations) % 4;
+        }
+        for (int rot = 0; rot < rotations; rot++) {
+            for(int i=0;i<rows;i++){
+                for(int j=i+1;j<rows;j++){
+                    int temp=a[i][j];
+                    a[i][j]=a[j][i];
+                    a[j][i]=temp;
+                }
+            }
+            for (int i = 0; i < rows; i++) {
+                int left = 0;
+                int right = rows - 1;
+                while (left < right) {
+                    int temp = a[i][left];
+                    a[i][left] = a[i][right];
+                    a[i][right] = temp;
+                    left++;
+                    right--;
+                }
+            }
+        }
+        System.out.println("The Matrix after rotation is:");
+        printMatrix(a);
     }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
