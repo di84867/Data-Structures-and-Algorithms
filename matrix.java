@@ -1,5 +1,17 @@
 import java.util.Scanner;
 class matrix{
+    public boolean linearSearch(int a[][], int rows, int cols, int key){
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                if(a[i][j]==key){
+                    System.out.println("Element "+key+" is found at index "+i+","+j);
+                    return true;
+                }
+            }
+        }
+        System.out.println("Element not found");
+        return false;
+    }
     public void printMatrix(int a[][], String message){
         int rows=a.length;
         int cols=a[0].length;
@@ -126,14 +138,17 @@ class matrix{
         int n=sc.nextInt();
         System.out.println("Enter the direction (clockwise/anticlockwise):");
         String dir=sc.next();
+        System.out.println("Enter the element to search for:");
+        int key=sc.nextInt();
         sc.close();
         matrix m=new matrix();
         m.printMatrix(a, "The Entered Matrix is:");
         m.rowwisesum(a);
         m.columnwiseSum(a);
-        m.diagonal(a);
+        m.diagonal(a);  
         m.antiDiagonal(a);
         m.transpose(a);
         m.rotate(a,n,dir);
+        m.linearSearch(a,rows,cols,key);
     }
 }
