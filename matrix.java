@@ -1,9 +1,9 @@
 import java.util.Scanner;
 class matrix{
-    public void printMatrix(int a[][]){
+    public void printMatrix(int a[][], String message){
         int rows=a.length;
         int cols=a[0].length;
-        System.out.println("The Entered Matrix is:");
+        System.out.println(message);
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
                 System.out.print(a[i][j]+" ");
@@ -37,21 +37,25 @@ class matrix{
         int rows=a.length;
         int cols=a[0].length;
         int r=0,c=0;
+        System.out.print("Diagonal elements are: ");
         while(r<rows && c<cols){
-            System.out.println(a[r][c]+" ");
+            System.out.print(a[r][c]+" ");
             r++;
             c++;
         }
+        System.out.println();
     }
     public void antiDiagonal(int a[][]){
         int rows=a.length;
         int cols=a[0].length;
         int r=0,c=cols-1;
+        System.out.print("Anti-Diagonal elements are: ");
         while(r<rows && c>=0){
-            System.out.println(a[r][c]+" ");
+            System.out.print(a[r][c]+" ");
             r++;
             c--;
         }
+        System.out.println();
     }
     public void transpose(int a[][]){
         int rows=a.length;
@@ -62,18 +66,27 @@ class matrix{
                 b[j][i]=a[i][j];
             }
         }
-        printMatrix(b);
+        printMatrix(b, "The Transposed Matrix is:");
     }
     public void rotate(int a[][],int n,String dir){
         int rows=a.length;
-        if (rows == 0 || a[0].length != rows) {
+        if (rows == 0) return;
+        int cols = a[0].length;
+        
+        if (cols != rows) {
+            System.out.println("Rotation is only supported for square matrices in this implementation.");
             return;
         }
+
         int rotations = (n / 90) % 4;
+        rotations = (rotations + 4) % 4; // Handle negative n
+
         if (dir.equalsIgnoreCase("anticlockwise") || dir.equalsIgnoreCase("anti-clockwise")) {
             rotations = (4 - rotations) % 4;
         }
+        
         for (int rot = 0; rot < rotations; rot++) {
+            // Transpose
             for(int i=0;i<rows;i++){
                 for(int j=i+1;j<rows;j++){
                     int temp=a[i][j];
@@ -81,6 +94,7 @@ class matrix{
                     a[j][i]=temp;
                 }
             }
+            // Reverse each row
             for (int i = 0; i < rows; i++) {
                 int left = 0;
                 int right = rows - 1;
@@ -93,8 +107,7 @@ class matrix{
                 }
             }
         }
-        System.out.println("The Matrix after rotation is:");
-        printMatrix(a);
+        printMatrix(a, "The Matrix after rotation is:");
     }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
@@ -115,7 +128,7 @@ class matrix{
         String dir=sc.next();
         sc.close();
         matrix m=new matrix();
-        m.printMatrix(a);
+        m.printMatrix(a, "The Entered Matrix is:");
         m.rowwisesum(a);
         m.columnwiseSum(a);
         m.diagonal(a);
