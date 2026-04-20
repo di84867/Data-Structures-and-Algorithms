@@ -1,34 +1,25 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Arrays;
-
-class MinCost {
-    public static void main(String[] xyz) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter the number of elements in array: ");
-        int n = sc.nextInt();
-        int a[] = new int[n];
-
-        System.out.println("Enter the elements in an array");
-        for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
+import java.util.Collections;
+class MinCost{
+    public static void main(String[] xyz){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter elements in an array");
+        ArrayList<Integer> a=new ArrayList<>();
+        while(sc.hasNextInt()){
+            a.add(sc.nextInt());
         }
-
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (a[i] < a[j]) {
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
-            }
+        System.out.println("The entered array:-");
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
         }
-        int cost = 0;
-        for (int i = 0; i < n; i++) {
-            cost += (i + 1) * a[i];
+        System.out.println();
+        Collections.sort(a, Collections.reverseOrder());
+        int cost=0;
+        for(int i=0;i<a.size();i++){
+            cost+=(i+1)*a.get(i);   
         }
-
-        System.out.println("The cost of deleting the array is: " + cost);
-        sc.close();
+        System.out.println("The minimum cost is:- "+cost);
     }
 }
