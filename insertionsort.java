@@ -1,23 +1,28 @@
+import java.util.Scanner;
+import java.util.ArrayList;
 public class insertionsort {
     public static void insertionSort(int[] arr) {
-        int n = arr.length;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the size of an array");
+        int n=sc.nextInt();
+        ArrayList<Integer> a=new ArrayList<>();
+        System.out.println("Enter the elements in an array");
+        for(int i=0;i<n;i++){
+            a.add(sc.nextInt());
+        }
         for (int i = 1; i < n; ++i) {
-            int key = arr[i];
+            int key = a.get(i);
             int j = i - 1;
 
-            /* Move elements of arr[0..i-1], that are
-               greater than key, to one position ahead
-               of their current position */
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
+            while (j >= 0 && a.get(j) > key) {
+                a.set(j + 1, a.get(j));
                 j = j - 1;
             }
-            arr[j + 1] = key;
-        }
+            a.set(j + 1, key);
+        } 
     }
 
     public static void main(String[] args) {
-        int[] arr = { 12, 11, 13, 5, 6 };
         insertionSort(arr);
         System.out.print("Sorted array: ");
         for (int i : arr) {
