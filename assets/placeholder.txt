@@ -1,1 +1,34 @@
-This folder contains assets for the README.
+# Project Program Index (Assets)
+
+This file maintains an organized record of all programs in the repository, categorized by their algorithmic type.
+
+## ⚡ Sorting Algorithms
+- bubblesort.java: Simple comparison-based sorting algorithm.
+- insertionsort.java: Builds the final sorted array one item at a time. [IMPLEMENTED]
+- selectionsort.java: Divides input into sorted and unsorted parts.
+
+## 📊 Array & Prefix Sum
+- prefix_sum_an_arr.java: Standard prefix sum implementation.
+- optimised_prefix_sum.java: Space/Time optimized prefix sum logic.
+- subarray.java: Generate and manipulate subarrays.
+- subarray1.java: Additional subarray explorations.
+- mooresvotingalgo.java: Boyer-Moore Majority Vote Algorithm.
+- nobleint.java: Finding elements greater than a certain count.
+- carryforward.java: Carry forward technique for sequence problems.
+
+## 🔠 String Manipulation
+- palstring.java: Efficient Palindrome checking.
+- switchalphabetcases.java: Case conversion logic.
+- CharacterPairCounterOptimised.java: Optimized character pair counting.
+
+## 🗄️ Matrix Operations
+- matrix.java: Suite for matrix rotations and transformations.
+
+## 🔢 Mathematical Basics
+- count_fact.java: Efficient factor counting.
+- sum1ton.java: Sum of first N natural numbers.
+- reverse.java: Reversing numbers/sequences.
+
+## 🧠 Advanced Challenges
+- MinCost.java: Optimization problem.
+- ValidSubarraysMinMax.java: Multi-constraint subarray finding.
