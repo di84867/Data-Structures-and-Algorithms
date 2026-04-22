@@ -24,9 +24,9 @@ Efficiently organizing data is the backbone of DSA. This section covers classic 
 
 | Algorithm | File | Description |
 | :--- | :--- | :--- |
-| **Bubble Sort** | [`bubblesort.java`](bubblesort.java) | Simple comparison-based sorting algorithm. |
-| **Insertion Sort** | [`insertionsort.java`](insertionsort.java) | Builds the final sorted array one item at a time. |
-| **Selection Sort** | [`selectionsort.java`](selectionsort.java) | Divides input into sorted and unsorted parts. |
+| **Bubble Sort** | [`bubblesort.java`](Sorting%20Algorithms/bubblesort.java) | Simple comparison-based sorting algorithm. |
+| **Insertion Sort** | [`insertionsort.java`](Sorting%20Algorithms/insertionsort.java) | Builds the final sorted array one item at a time. |
+| **Selection Sort** | [`selectionsort.java`](Sorting%20Algorithms/selectionsort.java) | Divides input into sorted and unsorted parts. |
 
 ---
 
@@ -34,47 +34,47 @@ Efficiently organizing data is the backbone of DSA. This section covers classic 
 Mastering array manipulations and optimizing range queries.
 
 - **Prefix Sum Basics**:
-    - [`prefix_sum_an_arr.java`](prefix_sum_an_arr.java): Standard prefix sum implementation.
-    - [`optimised_prefix_sum.java`](optimised_prefix_sum.java): Space/Time optimized prefix sum logic.
+    - [`prefix_sum_an_arr.java`](Array%20&%20Prefix%20Sum/prefix_sum_an_arr.java): Standard prefix sum implementation.
+    - [`optimised_prefix_sum.java`](Array%20&%20Prefix%20Sum/optimised_prefix_sum.java): Space/Time optimized prefix sum logic.
 - **Subarrays**:
-    - [`subarray.java`](subarray.java): Generate and manipulate subarrays.
-    - [`subarray1.java`](subarray1.java): Additional subarray explorations.
+    - [`subarray.java`](Array%20&%20Prefix%20Sum/subarray.java): Generate and manipulate subarrays.
+    - [`subarray1.java`](Array%20&%20Prefix%20Sum/subarray1.java): Additional subarray explorations.
 - **Advanced Array Logic**:
-    - [`mooresvotingalgo.java`](mooresvotingalgo.java): Boyer-Moore Majority Vote Algorithm (O(n) time, O(1) space).
-    - [`nobleint.java`](nobleint.java): Finding elements greater than a certain count.
-    - [`carryforward.java`](carryforward.java): Carry forward technique for sequence problems.
+    - [`mooresvotingalgo.java`](Array%20&%20Prefix%20Sum/mooresvotingalgo.java): Boyer-Moore Majority Vote Algorithm (O(n) time, O(1) space).
+    - [`nobleint.java`](Array%20&%20Prefix%20Sum/nobleint.java): Finding elements greater than a certain count.
+    - [`carryforward.java`](Array%20&%20Prefix%20Sum/carryforward.java): Carry forward technique for sequence problems.
 
 ---
 
 ## 🔠 String Manipulation
 Common string-based algorithmic challenges.
 
-- [`palstring.java`](palstring.java): Efficient Palindrome checking.
-- [`switchalphabetcases.java`](switchalphabetcases.java): Case conversion logic (Upper to Lower and vice-versa).
-- [`CharacterPairCounterOptimised.java`](CharacterPairCounterOptimised.java): Counting specific character pairs with optimized complexity.
+- [`palstring.java`](String%20Manipulation/palstring.java): Efficient Palindrome checking.
+- [`switchalphabetcases.java`](String%20Manipulation/switchalphabetcases.java): Case conversion logic (Upper to Lower and vice-versa).
+- [`CharacterPairCounterOptimised.java`](String%20Manipulation/CharacterPairCounterOptimised.java): Counting specific character pairs with optimized complexity.
 
 ---
 
 ## 🗄️ Matrix Operations
 Working with 2D grids and multidimensional data.
 
-- [`matrix.java`](matrix.java): A comprehensive suite for matrix rotations, sums, and transformations.
+- [`matrix.java`](Matrix%20Operations/matrix.java): A comprehensive suite for matrix rotations, sums, and transformations.
 
 ---
 
 ## 🔢 Mathematical Basics
 Fundamental problems to sharpen your logic.
 
-- [`count_fact.java`](count_fact.java): Counting factors of a number efficiently.
-- [`sum1ton.java`](sum1ton.java): Calculating the sum of first N natural numbers.
-- [`reverse.java`](reverse.java): Reversing numbers or simple sequences.
+- [`count_fact.java`](Mathematical%20Basics/count_fact.java): Counting factors of a number efficiently.
+- [`sum1ton.java`](Mathematical%20Basics/sum1ton.java): Calculating the sum of first N natural numbers.
+- [`reverse.java`](Mathematical%20Basics/reverse.java): Reversing numbers or simple sequences.
 
 ---
 
 ## 🧠 Advanced Challenges
 Solving more complex algorithmic puzzles.
 
-- [`MinCost.java`](MinCost.java): Optimization problem related to minimum cost paths or operations.
-- [`ValidSubarraysMinMax.java`](ValidSubarraysMinMax.java): Finding valid subarrays based on min/max constraints.
+- [`MinCost.java`](Advanced%20Challenges/MinCost.java): Optimization problem related to minimum cost paths or operations.
+- [`ValidSubarraysMinMax.java`](Advanced%20Challenges/ValidSubarraysMinMax.java): Finding valid subarrays based on min/max constraints.
 
 ---

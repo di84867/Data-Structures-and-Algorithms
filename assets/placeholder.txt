@@ -3,32 +3,32 @@
 This file maintains an organized record of all programs in the repository, categorized by their algorithmic type.
 
 ## ⚡ Sorting Algorithms
-- bubblesort.java: Simple comparison-based sorting algorithm.
-- insertionsort.java: Builds the final sorted array one item at a time. [IMPLEMENTED]
-- selectionsort.java: Divides input into sorted and unsorted parts.
+- Sorting Algorithms/bubblesort.java: Simple comparison-based sorting algorithm.
+- Sorting Algorithms/insertionsort.java: Builds the final sorted array one item at a time.
+- Sorting Algorithms/selectionsort.java: Divides input into sorted and unsorted parts.
 
 ## 📊 Array & Prefix Sum
-- prefix_sum_an_arr.java: Standard prefix sum implementation.
-- optimised_prefix_sum.java: Space/Time optimized prefix sum logic.
-- subarray.java: Generate and manipulate subarrays.
-- subarray1.java: Additional subarray explorations.
-- mooresvotingalgo.java: Boyer-Moore Majority Vote Algorithm.
-- nobleint.java: Finding elements greater than a certain count.
-- carryforward.java: Carry forward technique for sequence problems.
+- Array & Prefix Sum/prefix_sum_an_arr.java: Standard prefix sum implementation.
+- Array & Prefix Sum/optimised_prefix_sum.java: Space/Time optimized prefix sum logic.
+- Array & Prefix Sum/subarray.java: Generate and manipulate subarrays.
+- Array & Prefix Sum/subarray1.java: Additional subarray explorations.
+- Array & Prefix Sum/mooresvotingalgo.java: Boyer-Moore Majority Vote Algorithm.
+- Array & Prefix Sum/nobleint.java: Finding elements greater than a certain count.
+- Array & Prefix Sum/carryforward.java: Carry forward technique for sequence problems.
 
 ## 🔠 String Manipulation
-- palstring.java: Efficient Palindrome checking.
-- switchalphabetcases.java: Case conversion logic.
-- CharacterPairCounterOptimised.java: Optimized character pair counting.
+- String Manipulation/palstring.java: Efficient Palindrome checking.
+- String Manipulation/switchalphabetcases.java: Case conversion logic.
+- String Manipulation/CharacterPairCounterOptimised.java: Optimized character pair counting.
 
 ## 🗄️ Matrix Operations
-- matrix.java: Suite for matrix rotations and transformations.
+- Matrix Operations/matrix.java: Suite for matrix rotations and transformations.
 
 ## 🔢 Mathematical Basics
-- count_fact.java: Efficient factor counting.
-- sum1ton.java: Sum of first N natural numbers.
-- reverse.java: Reversing numbers/sequences.
+- Mathematical Basics/count_fact.java: Efficient factor counting.
+- Mathematical Basics/sum1ton.java: Sum of first N natural numbers.
+- Mathematical Basics/reverse.java: Reversing numbers/sequences.
 
 ## 🧠 Advanced Challenges
-- MinCost.java: Optimization problem.
-- ValidSubarraysMinMax.java: Multi-constraint subarray finding.
+- Advanced Challenges/MinCost.java: Optimization problem.
+- Advanced Challenges/ValidSubarraysMinMax.java: Multi-constraint subarray finding.
