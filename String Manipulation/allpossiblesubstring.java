@@ -9,5 +9,6 @@ class allpossiblesubstring{
 				System.out.println(str.substring(i,j));
 			}
 		}
+		sc.close();
 	}
 }

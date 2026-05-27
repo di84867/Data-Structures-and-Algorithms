@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 class MinCost {
@@ -27,5 +26,6 @@ class MinCost {
             cost += (i + 1) * a.get(i);
         }
         System.out.println("The minimum cost is:- " + cost);
+        sc.close();
     }
 }

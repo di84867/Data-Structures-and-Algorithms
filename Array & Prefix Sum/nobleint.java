@@ -25,5 +25,6 @@ class nobleint {
         }
         System.out.println("The number of noble integers is:- ");
         System.out.println(ans);
+        sc.close();
     }
 }

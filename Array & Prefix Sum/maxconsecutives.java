@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 import java.util.ArrayList;
 class maxconsecutives{
     public static int maxcons0(int arr[]){
