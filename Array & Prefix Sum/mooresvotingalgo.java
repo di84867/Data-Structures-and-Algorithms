@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class mooresvotingalgo {
+class mooresvotingalgo {
     public static int findMajority(int[] arr) {
         int major = -1;
         int freq = 0;
