@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
 public class insertionsort {
     public static void insertionSort(int[] arr) {
         int n = arr.length;
