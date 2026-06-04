@@ -18,9 +18,16 @@ class nobleint {
             System.out.println(a.get(i) + " ");
         }
         int ans = 0;
-        for (int i = 0; i < a.size(); i++) {
-            if (i == a.get(i)) {
-                ans += 1;
+        int n = a.size();
+        for (int i = 0; i < n; i++) {
+            int temp = a.get(i);
+            int lastIdx = i;
+            while (lastIdx + 1 < n && a.get(lastIdx + 1) == temp) {
+                lastIdx++;
+            }
+            int countGreater = n - 1 - lastIdx;
+            if (temp == countGreater) {
+                ans++;
             }
         }
         System.out.println("The number of noble integers is:- ");

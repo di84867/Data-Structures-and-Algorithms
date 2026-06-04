@@ -1,36 +1,30 @@
 import java.util.Scanner;
-public class insertionsort {
-    public static void insertionSort(int[] arr) {
-        int n = arr.length;
-        for (int i = 1; i < n; ++i) {
-            int key = arr[i];
-            int j = i - 1;
-
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
-                j = j - 1;
+import java.util.ArrayList;
+class insertionsort{
+    public void isort(ArrayList<Integer> arr){
+        for(int i=1;i<arr.size();i++){
+            int x=arr.get(i);
+            int j=i-1;
+            while(j>=0&&arr.get(j)>x){
+                arr.set(j+1, arr.get(j));
+                j--;
             }
-            arr[j + 1] = key;
+            arr.set(j+1, x);
         }
     }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of an array");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        ArrayList<Integer> al=new ArrayList<>();
+        insertionsort is=new insertionsort();
         System.out.println("Enter the elements in an array");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        while(sc.hasNextInt()){
+            int n=sc.nextInt();
+            al.add(n);
         }
-
-        insertionSort(arr);
-
-        System.out.print("Sorted array: ");
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        System.out.println("The Entered Array is:"+al);
+        is.isort(al);
+        System.out.println("The Sorted Array is:"+al);
         sc.close();
     }
 }

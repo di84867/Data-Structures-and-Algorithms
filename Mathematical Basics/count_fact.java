@@ -10,9 +10,10 @@ class count_fact{
             if(n % i == 0) {
                 System.out.print(i + " ");
                 count+=1;
-                System.out.println("Count of factors: " + count);
             }
-            sc.close();
         }
+        System.out.println();
+        System.out.println("Count of factors: " + count);
+        sc.close();
     }
 }

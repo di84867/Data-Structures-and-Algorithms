@@ -8,6 +8,11 @@ public class CharacterPairCounterOptimised  {
         String A = sc.nextLine();
 
         int N = A.length();
+        if (N == 0) {
+            System.out.println("Number of (a,g) pairs: 0");
+            sc.close();
+            return;
+        }
         int[] PA = new int[N]; 
         
         PA[0] = 0; 

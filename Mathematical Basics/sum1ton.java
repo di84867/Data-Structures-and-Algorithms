@@ -9,14 +9,18 @@ public class sum1ton {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int total = 0;
+        int sum1ToN = 0;
         for(int i=1;i<=n;i++) {
-            total += i;
+            sum1ToN += i;
+        }
+        int arraySum = 0;
+        for (int i = 0; i < n; i++) {
+            arraySum += arr[i];
         }
         System.out.println("");
-        System.out.println("The sum of numbers from 1 to " + n + " is): " + total);
-        System.out.println("Total sum of the array elements: " + total);
-    sc.close();
+        System.out.println("The sum of numbers from 1 to " + n + " is: " + sum1ToN);
+        System.out.println("Total sum of the array elements: " + arraySum);
+        sc.close();
     }
 }
 

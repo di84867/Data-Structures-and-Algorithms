@@ -1,32 +1,32 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 class bubblesort {
-    public static void main(String[] xyz) {
-        int temp;
-    
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter the number of elements in the array to perform bubble sort");
-            int n = sc.nextInt();
-            int[] arr = new int[n];
-   
-            System.out.println("Enter the elements till size " + n);
-            for(int i = 0; i < n; i++) {
-                arr[i] = sc.nextInt();
-            }
-            for(int i = 0; i < n - 1; i++) {
-                for(int j = 0; j < n - i - 1; j++) {
-                    if(arr[j] > arr[j + 1]) {
-                        temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
-                    }
+    Scanner sc = new Scanner(System.in);
+    ArrayList<Integer> al = new ArrayList<>();
+
+    public void bsort(ArrayList<Integer> arr) {
+        int temp = 0;
+        for (int i = 0; i < arr.size(); i++) {
+            for (int j = 0; j < arr.size() - i - 1; j++) {
+                if (arr.get(j) > arr.get(j + 1)) {
+                    temp = arr.get(j);
+                    arr.set(j, arr.get(j + 1));
+                    arr.set(j + 1, temp);
                 }
             }
-            System.out.print("Final array after all operations: ");
-            for(int i = 0; i < n; i++) {
-                System.out.print(arr[i] + " ");
-            }
         }
-        System.out.println();
+    }
+
+    public static void main(String[] xyz) {
+        bubblesort bs = new bubblesort();
+        System.out.println("Enter the elements in an array");
+        while (bs.sc.hasNextInt()) {
+            bs.al.add(bs.sc.nextInt());
+        }
+        System.out.println("The entered array is: " + bs.al);
+        bs.bsort(bs.al);
+        System.out.println("The sorted array is: " + bs.al);
+        bs.sc.close();
     }
 }

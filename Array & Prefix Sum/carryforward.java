@@ -18,10 +18,11 @@ public class carryforward{
 
         for (int i = 0; i < s.length(); i++) {
             char current = s.charAt(i);
+            if (current == y) {
+                pairCount += countX; 
+            }
             if (current == x) {
                 countX++;        
-            } else if (current == y) {
-                pairCount += countX; 
             }
         }
 

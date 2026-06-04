@@ -25,6 +25,8 @@ public class ValidSubarraysMinMax {
                         if (i < end) System.out.print(", ");
                     }
                     System.out.println("]");
+                } else {
+                    break;
                 }
             }
         }
