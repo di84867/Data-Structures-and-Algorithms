@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+
 class insertionsort{
     public void isort(ArrayList<Integer> arr){
         for(int i=1;i<arr.size();i++){
